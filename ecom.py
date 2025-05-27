@@ -40,7 +40,7 @@ def signup(username,password):
  
     cursor=conn.cursor()
  
-    cursor.execute("INSERT INTO users(username,password) VALUES (?,?)",(username,password))
+    cursor.execute("INSERT INTO user1 (username,password) VALUES (?,?)",(username,password))
    
     data=cursor.fetchall()
  
